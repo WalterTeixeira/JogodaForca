@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Ubuntu:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+}
+
+body {
+    font-family: 'Poller One', cursive;
+    position: relative;
+    background-color: ffffff;
+    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:#E5E5E5;
+    margin-top:  40px;
+    
+    
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+.header .logo {
+    margin-right: 50px;
+    margin-top: 30px;
+    
+}
+.home {
+    display: block;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    top: 30%;
+    bottom: 70%;
+    transform: translate(-50%, -50%);
+    flex: 1 0 auto;
+    
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.home-container .dica{       
+    font-size: 20px;
+    color: lightgray
+      
+}    
+
+.home .home-container .title {
+    margin-top: 200px;
+    font-size: 70px;
+    color: whitesmoke;
+    -webkit-text-stroke: 2.5px #0A3871;
+    
+    
+
+   
+    
+}
+.home .home-container .jogar {
+    padding: 5px;
+    font-size: 30px;
+    font-family:'Anton', sans-serif;
+    width: 280px;
+    border-radius: 10px;
+    border: 2px solid white; 
+    margin-bottom: 30px;
+    box-shadow: 5px 5px #0A3871;
+    cursor: pointer;
+    transition: background-color .2s;
+    
+}
+.home .home-container .jogar:hover {
+    background-color: #0A3871;
+    
+    
+    
+}
+.home .home-container .jogar:active {
+    padding: 4px 5px;
+    border: 1px solid;
+    
+    
+    
+}
+
+
+.footer {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+     width: 100%;
+    text-align: center;
+    color: #0A3871;
+    margin-top: 500px;
+    font-size: 10px;
+}
+.footer h3 {
+    font-weight: 100px;
+    margin-bottom: 10px;
+    cursor: default;
+}
+@media ( min-width: 320px){
+    .header .logo {
+        margin-right: 30px;
+        margin-top: 30px;
+        width: 60px;
+    }
+    .home .home-container .title{
+        font-size: 40px;
+    }
+    .home .home-container .jogar {
+        width: 100px;  
+        font-size: 15px; 
+           
+    }
+    .home .home-container .adiciona{
+        width: 150px;
+        font-size: 15px;
+    }
+    .footer h3 {
+      font-size: 9px;
+    }
+}
+@media ( min-width: 376px){
+    .header .logo {
+        margin-right: 30px;
+        margin-top: 30px;
+        width: 100px;
+    }
+    .home .home-container .title{
+        font-size: 50px;
+    }
+    .home .home-container .jogar {
+        width: 130px;  
+        font-size: 20px; 
+           
+    }
+    .home .home-container .adiciona{
+        width: 160px;
+        font-size: 20px;
+    }
+    .footer h3 {
+        margin-top: 20px;
+      font-size: 11px;
+    }
+}
+@media (min-width:425px){
+    .footer h3{
+        margin-top: 20px;
+    }
+    
+}
+
+@media ( min-width: 768px){
+    .header .logo {
+        margin-right: 30px;
+        margin-top: 30px;
+        width: 100px;
+    }
+    .home .home-container .title{
+        font-size: 80px;
+    }
+    .home .home-container .jogar {
+        width: 150px;  
+        font-size: 30px;
+        
+    }
+    .home .home-container .adiciona{
+        width: 230px;
+        font-size: 30px;
+    }
+         
+    .footer h3 {
+        font-size: 14px;
+      margin-top: 50px;
+            
+    }
+}
+@media ( min-width: 1024px){
+    .header .logo {
+        margin-right: 30px;
+        margin-top: 30px;
+        width: 200px;
+    }
+    .home .home-container .title{
+        font-size: 100px;
+    }
+    .home .home-container .jogar {
+        width: 200px;  
+        font-size: 40px;
+        
+          
+    }
+    .home .home-container .adiciona{
+        width: 300px;
+        font-size: 40px;
+    }
+         
+    .footer h3 {
+        font-size: 14px;
+        margin-top: 60px;
+            
+    }
+}
+
+@media (min-width:768px){
+    .home-container .dica {
+   
+        margin-top: 50px;
+        margin-bottom: 150px;
+        font-size: 50px;    
+        color: gray
+    }
+}

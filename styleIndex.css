@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter&family=Ubuntu:ital@1&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Anton', sans-serif;
+    background-color:#E5E5E5
+}
+
+
+.flex-container-1 {    
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container-1 .title {
+   
+    margin-top: 30px;
+    font-size: 20px;
+    color: #EFEFEF;
+    -webkit-text-stroke: 1.6px #0A3871;
+    font-family: 'Poller One', cursive;
+
+}
+.flex-container-1 .dica{
+    -webkit-text-stroke: 1.0px #0A3871;
+    font-size: 15px; 
+    color: #FFFFFF;
+    left: 30px;
+    font-family: 'Poller One', cursive;
+
+
+}
+
+.flex-container-2 {   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.flex-container-2-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   
+    margin-top: 30px;   
+    
+}
+#forca{
+    width: 200px;
+    height: 150px;
+    margin-left: 70px;
+    
+}
+
+.flex-container-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+}
+
+h2{ 
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color: #EFEFEF;
+    -webkit-text-stroke: 1.5px lightgray;
+     text-transform: uppercase;
+}
+
+
+p {
+    font-family: 'Anton', sans-serif;
+    font-size: 10px;
+}
+.novo-bt{
+    font-family: 'Anton', sans-serif;
+    font-size:8px;
+    width: 30px;
+    height: 50px;
+    
+}
+
+span {
+    display: flex;
+  width: 15px;
+  text-align:center;
+  border-bottom: 2px solid black;
+  color: black;
+  padding: 2px;
+  margin-left: 1px;
+  margin-right: 2px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+
+}
+
+
+button {    
+    background-color: #0A3871;
+    width: 25px;
+    height: 25px; 
+    cursor: pointer;  
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+
+}
+#desistir {    
+    display:flex ;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 300px;
+    width: 101px;
+    height: 50px;    
+    padding: 10px 0;
+    background-color:lightgray;
+    color: black;    
+    border: 1px solid #0A3871;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+
+}
+
+button:hover {
+    background-color: powderblue;
+    color: black;
+   
+
+}
+
+button.novo-bt {
+    width: auto;
+    padding: 10px;
+}
+
+.certa, .certa:hover {
+    background: greenyellow;
+    border: 1px solid powderblue;
+    cursor: inherit;
+    color: #0A3871;
+    
+}
+
+    .errada, .errada:hover {
+    background: red;
+    border: 1px solid powderblue;
+    cursor: inherit;
+} 
+    .footer {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+     width: 100%;
+    text-align: center;
+    color: #0A3871;
+    margin-top: 400px;
+    font-size: 10px;
+   
+}
+    .footer h3 {
+    font-weight: 100px;
+    margin-bottom: 10px;
+    cursor: default;
+    
+}
+
+@media (min-width:320px) {
+    span{
+    font-size: 13px;
+}
+
+    button{
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+       
+}
+    #desistir{
+    font-size: 10px;
+    width: 50px;
+    height: 30px;
+    margin-right: 100px;
+    }   
+}
+
+@media (min-width:375px){
+    span{
+    font-size: 15px;
+} 
+    
+    button{
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+       
+    }
+}
+
+@media (min-width:768px){
+    .flex-container-1 .title {
+   
+        margin-top: 50px;
+        font-size: 80px;
+    }
+    .flex-container-1 .dica{       
+        font-size: 20px;
+        color: lightgray
+          
+    }    
+    
+    button{
+        width: 65px;
+        height: 55px;
+        font-size: 30px;
+        
+    }
+     #forca{
+            width: 200px;
+            height: 250px;
+            margin-left: 130px;
+            
+   }
+    span {
+          font-size: 1.2em;
+          width: 30px;
+        
+        }
+    #desistir{
+            font-size: 18px;
+            width: 125px;
+            height: 40px;
+            
+            
+            
+            }  
+     p {
+              
+                font-size: 25px;
+                
+            }
+     .novo-bt{
+                font-size: 16px;
+                width: 60px;
+                height: 60px;
+                margin-left: 50px;
+                
+            } 
+        
+    }
+    
+
